@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eye Contact Challenge</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="corner tl">Eye Contact<br>Challenge</div>
+<div class="corner tr">v1.0</div>
+<div class="corner bl" id="corner-count"></div>
+<div class="corner br">Made by<br>tizio_bello66</div>
+
+<div id="screen-start">
+  <div class="eyeline">— photo challenge —</div>
+  <h1>Eye Contact<br>With A <span>Photo</span></h1>
+  <p class="sub">Can you hold the gaze?</p>
+  <button id="btn-start" onclick="startCountdown()">Start Challenge</button>
+</div>
+
+<div id="screen-countdown" class="hidden">
+  <div id="countdown-number">3</div>
+  <div id="countdown-label">get ready</div>
+</div>
+
+<div id="screen-image" class="hidden">
+  <div id="photo-wrap">
+    <img id="photo" src="" alt="challenge photo">
+    <div id="photo-overlay"></div>
+  </div>
+  <button id="btn-next" onclick="nextImage()">Next image →</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
